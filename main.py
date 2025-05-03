@@ -1,27 +1,16 @@
+# This is a sample Python script.
 
-def is_leap(year):
-    leap=False
-    if(year% 4==0 and year %100!=0)or(year %400==0):
-        leap=True
-    return leap
-
-while True:
-    try:
-     year=int(input("Enter a year:"))
-     print("It's a leap year"if is_leap(year)else "It's not  a leap year.")
-
-    except ValueError:
-     print("Invalid input.Enter a valid year")
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 
-    while True:
-     another=input("Do you want to enter another year(yes/no):")
-     if another=='yes':
-         break# Go back to the start to do the loop
-     elif another=='no':
-         print("Okay")
-         exit()
-     else:
-         print("Please enter yes or no.")
+def print_hi(name):
+    # Use a breakpoint in the code line below to debug your script.
+    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
 
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
